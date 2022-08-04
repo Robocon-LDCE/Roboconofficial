@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Robocon LDCE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<style>
+#validate:hover
+{
+	background-color: rgb(233, 219, 219)!important;
+}
+.button.alt:hover{
+	background-color: rgb(233, 219, 219)!important;
+}
+	.wrapper.style2 {
+			background: #ffffff url("images/overlay.png");
+		}
+
+			.wrapper.style2 .title {
+				background: #ffffff url("images/overlay.png");
+				color: #000000;
+				font-weight: bold;
+				font-size: 18px;
+			}
+	</style>
+	<body  class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a>🔗Connect with us</a></h1>
+							<p>Get in touch with us in various method</p>
+						</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							
+							<li><a href="about.html">ABOUT</a></li>
+							<li>
+								<a href="gallery.html">Gallery</a>
+								<ul>
+									<li><a href="#team_members">Team members</a></li>
+									<li><a href="#highlights">Achievements</a></li>
+								
+									<li>
+										<a href="#">More</a>
+										<ul>
+											<li><a href="#">year 2022 </a></li>
+											<li><a href="#">year 2021</a></li>
+											<li><a href="#">year 2020</a></li>
+											<li><a href="#">year 2019</a></li>
+											<li><a href="#">year 2018</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+							</li>
+                             <!-- <ul> </ul>
+							<li><a href="gallery.html">Gallery</a></li> -->
+							<li><a href="events.html">NEWS</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+                           
+						</ul>
+					</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1" >
+					<div class="title" >Donation</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>Thank you for visting our page.</h2>
+										
+									</header>
+									
+									<p style="color: white;text-align: center;">There can be a single team as winner but,  in reality there is community as helping hand in behind which gives there support in any possible way for the same.<br>
+										We are glad to see you here, even a little donation amount help us a lot.
+										Thank you for being helping hand for our Team. </p>
+
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												
+												<div class="col-12"><input  style="text-align: center;border-color: #d3d3d3;border-width: 3px;border-style: solid;"type="text" placeholder="Name"  /></div>
+												<div class="col-12"><input  style="text-align: center;border-color: #d3d3d3;border-width: 3px;border-style: solid;"type="text" placeholder="Email"  /></div>
+												<div class="col-12"><input  style="text-align: center;border-color: #d3d3d3;border-width: 3px;border-style: solid;" type="number" placeholder="Amount" /></div>
+												<div class="col-12">
+													<ul class="actions special">
+														<li><input style="color: white;"type="submit" class="button style3" value="PAY" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+								</article>
+							</div>
+
+					</div>
+				</div>
+<!--sponsership-->
+				<div id="sponsership" class="wrapper style2"  style="	background-color: #404654!important;"  >
+					<div class="title"   style="	color:#e97d2f;background-color: #404654!important;"  >Sponsership</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2 style="color: #e97d2f;">We are glad that you show your interest in our team.</h2>
+										<p  >Our team heartly welcomes your sponsership</p>
+									</header>
+									
+									<p style="text-align: center;">Sponsoring our team will be surely benefit to you. We allow  to promote your brand to an audience of thousands as DD Robocon Nationals is broadcasted live by Doordarshan,
+										and DD News. We will have the opportunity to present your brand in front of a group of energetic, bright students and business professionals .
+										<br><br>To get in touch with us related with sponsership we request you to fill following details and we will get back to you very soon </p>
+										<p style="font-size: 12px;text-align: center;">**Before filling the form read all <a> Terms and Condition (T&C) </a>  and information related to sponsership </p>
+								</article>
+								<div class="content style4 featured">
+									<div class="container medium">
+										<form  method="post" name="SponsershipData" onsubmit="return validation()" id="FRMSUBMIT" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-mobile"><input style="text-align:center;border-color: #c2bbbb;border-width: 3px;border-style: solid;" id="Name" type="text" placeholder="Company name" name="Name" required /></div>
+												<div class="col-6 col-12-mobile"><input value="" style="text-align:center;border-color: #d3d3d3;border-width: 3px;border-style: solid;" id="email"type="email" placeholder="Company email" name="Email"  onkeydown="validation()" required/>
+													<div id='result'></div></div>
+												
+												<div class="col-12"><textarea style="text-align:center;border-color: #d3d3d3;border-width: 3px;border-style: solid;" type="text" id="Message"  placeholder="Any special message" name="Message"></textarea></div>
+												<div class="col-12">
+													<ul class="actions special">
+														<li><input style="color: black;background-color: white;"type="submit" name="submit" class="button" value="Send Message" id="validate" /></li>
+														<li><input type="reset" style="color: black;background-color: white;" class="button alt" value="Clear Form" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">others</div>
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact Form -->
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-50">
+										
+											<div class="col-12">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.759261174865!2d72.54259821448896!3d23.032609821733764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85277f790a8b%3A0x19d65a6f82b8c100!2sLARCET%20(ROBOCON%20LDCE)!5e0!3m2!1sen!2sin!4v1659098182274!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+											
+										</div>
+									</form>
+								</section>
+
+						</div>
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact -->
+								<section class="feature-list small">
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-home">Other Useful Link</h3>
+												<a target="_blank" href="http://ldce.ac.in/">LDCE</a><br>
+												<a target="_blank" href="http://www.ddrobocon.in/">DD Robocon</a><br>
+												<a target="_blank" href="https://en.wikipedia.org/wiki/ABU_Robocon">ABU Robocon</a><br>
+												
+										
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-comment">Social</h3>
+												<p>
+													<a target="_blank" href="https://www.instagram.com/roboconldce/">Instagram</a><br />
+													<a target="_blank" href="https://in.linkedin.com/company/robocon-ldce-team-robocon-india-2019">Linkedin</a><br />
+													<a target="_blank" href="https://www.facebook.com/roboconldce">facebook</a>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-envelope">Email</h3>
+												<p>
+													<a itemprop="email" href="mailto:teamroboconldce@gmail.com">Roboconldcollege@gmail.com</a>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-phone">Phone</h3>
+												<p>
+													<a  href="tel:7043026316">+917043026316</a>
+												</p>
+											</section>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy; Robocon LDCE</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+	
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			jQuery('#FRMSUBMIT').on('submit',function(e){
+				e.preventDefault();
+				window.open("thankyou.html");
+				window.close("contact.html");
+				// alert("Thank you for showing your interest. We will get to you in very short time period.We hope all the information provided by you are correct.Thank you.");
+				jQuery.ajax({url:'https://script.google.com/macros/s/AKfycbxt03cYe2Uey8hqI5CB31f9rit8CZv0TpMjG1aMDu22VPQNdSTaFm7kgURkY-apbPnY/exec',type:'post',data:jQuery('#FRMSUBMIT').serialize(),success:function(result){console.log(result);}});
+			});
+
+			
+			</script>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js">
+</script>
+
+<script>
+	function validateEmail(email) {
+	  let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	  return res.test(email);
+	}
+	function validate() {
+	  let result = $("#result");
+	  let email = $("#email").val();
+	  result.text("");
+	  if(validateEmail(email)) {
+		e.preventDefault();
+				alert("Thank you for showing your interest. We will get to you in very short time period.We hope all the information provided by you are correct.Thank you.");
+				jQuery.ajax({url:'https://script.google.com/macros/s/AKfycbxt03cYe2Uey8hqI5CB31f9rit8CZv0TpMjG1aMDu22VPQNdSTaFm7kgURkY-apbPnY/exec',type:'post',data:jQuery('#FRMSUBMIT').serialize(),success:function(result){console.log(result);}});
+		
+	
+	  } else {
+		result.text(email + " is not valid valid Email address. Please Enter valid email.");
+		result.css("color", "red");
+	  }
+	  return false;
+	}
+	$("#validate").on("click", validate);
+  </script>
+ 
+	</body>
+</html>
