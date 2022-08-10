@@ -1,148 +1,498 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Robocon LDCE</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	
-	
-	<body class="homepage is-preload" >
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header" class="wrapper">
+<head>
+	<title>Robocon LDCE</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
 
-					<!-- Logo -->
-						<div id="logo">
-							<img src="images/R.png" width="30%" style="max-height:500px;">
-							<!-- <h1><a href="index.html">Robocon  🤖 LDCE</a></h1>
+
+
+
+
+
+
+<!-- <script>
+
+
+	$(window).load(function (e) {
+		console.log(e);
+		// $('#preloader').fadeOut('slow');
+	});
+</script> -->
+
+<style>
+
+#highlights .highlight {
+				width: 350px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+@media screen and (max-width: 736px) {
+		
+
+.row > * {
+						padding: 30px 10px 0px 20px;
+					}
+				}
+.image img{
+	width:300px!important;
+	height:300px!important
+	
+}
+
+.wrapper.style3 .image {
+			border: solid 10px #fff;
+			margin: 0px 20px;
+		}
+
+		.wrapper.style3 p{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: white!important;
+}
+    /*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);*/
+    *:focus {
+  outline: none;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+/* login page ended */
+
+	@media  screen and (max-width:736px) {
+		.logo#logo 
+	{
+		top:30%!important;
+	}
+		
+	}
+	
+	body{
+		
+		overflow-x: hidden!important;
+		background-color: white!important;
+	}
+	@media screen and (max-width: 670px) {
+
+		#logo img {
+			height: 220px !important;
+			width: 220px;
+		}
+
+	}
+
+
+
+	.preloader {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		margin-bottom: 80px;
+		background: url('images/Preload.gif') no-repeat center center;
+		background-image: url('images/Preload.gif') no-repeat center center;
+		background-repeat: no-repeat;
+		background-color: #22283e;
+		background-position: center;
+
+	}
+</style>
+
+
+<script type="text/javascript" defer>
+	$(document).scroll(function()
+		{
+			preload.remove();
+			document.getElementById("page").style.overflow="scroll";
+		}
+	);
+	$(document).ready(function () {
+		setTimeout(function () {
+			preload.remove();
+			document.getElementById("page").style.overflow="scroll";
+		}, 5000);
+	});
+</script>
+<div  id="preload" style="background-color: #22283e;width: 100vw!important;height: 100vh!important" >
+	<div class="logo"id="logo" style="top:15px">
+
+		<img src="images/Preload.gif" width="60%!important" height="60%!important"  >
+	</div>
+</div>
+
+<body class="homepage is-preload" style=" background-color: #22283e;overflow: hidden;"id="page" >
+
+
+	
+	<div id="page-wrapper">
+		<!-- Header -->
+		<section id="header" class="wrapper">
+
+			<!-- Logo -->
+			<div id="logo">
+
+				<img src="images/R.png" width="30%" style="max-height:500px;">
+				<!-- <h1><a href="index.html">Robocon  🤖 LDCE</a></h1>
 							<p>THE ROBOTICS CLUB OF LD COLLEGE OF ENGINEERING</p> -->
-						</div>
+			</div>
 
-					<!-- Nav -->
-					<nav id="nav">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+
+					<li><a href="about.html">ABOUT</a></li>
+					<li>
+						<a href="gallery.html">Gallery </a>
 						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
-							
-							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="gallery.html#team_members">Team members</a></li>
+							<li><a href="gallery.html#highlights">Achievements</a></li>
+
 							<li>
-								<a href="gallery.html">Gallery</a>
+								<a href="#">More</a>
 								<ul>
-									<li><a href="#team_members">Team members</a></li>
-									<li><a href="#highlights">Achievements</a></li>
-								
-									<li>
-										<a href="#">More</a>
-										<ul>
-											<li><a href="#">year 2022 </a></li>
-											<li><a href="#">year 2021</a></li>
-											<li><a href="#">year 2020</a></li>
-											<li><a href="#">year 2019</a></li>
-											<li><a href="#">year 2018</a></li>
-										</ul>
-									</li>
-									
+									<li><a href="gallery.html#year2022">year 2022 </a></li>
+									<li><a href="gallery.html#year2021">year 2021</a></li>
+									<li><a href="gallery.html#year2020">year 2020</a></li>
+									<li><a href="gallery.html#year2019">year 2019</a></li>
+									<li><a href="gallery.html#year2018">year 2018</a></li>
 								</ul>
 							</li>
-                             <!-- <ul> </ul>
+
+						</ul>
+					</li>
+					<!-- <ul> </ul>
 							<li><a href="gallery.html">Gallery</a></li> -->
-							<li><a href="events.html">NEWS</a></li>
-							<li><a href="contact.html">CONTACT</a></li>
-                           
-						</ul>
-					</nav>
+					<li><a href="events.html">NEWS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
 
-				</section>
+				</ul>
+			</nav>
 
-			<!-- Intro -->
-				<section id="intro" class="wrapper style1" style="background-color: #e97d2f ;" >
-					<div class="title" style="background-color: #e97d2f ;">Introduction</div>
-					<div class="container">
-						<p class="style1">So in case you were wondering what this is all about ...</p>
-						<p class="style2">
-							ROBOCON IS THE ONLY ROBOTICS CLUB OF LD COLLEGE OF ENGINEERING</p>
-						<p class="style3">Robocon LDCE is robotics club of LD college of engineering which takes part in international robotics competition <a href="https://en.wikipedia.org/wiki/ABU_Robocon" target="_blank"> ABU Robocon</a>. For more details you can visit our  <a href="about.html">ABOUT</a>   page. <br><br></p>
-						<br><p class="style1" style="font-size: 20px;" >	<strong >Want to be member of our team ?</strong>
-						<!-- <br>Register yourself  by clicking on Register and we will reach out to you soon. </p> -->
-						<ul class="actions">
-							<li><a href="events.html" class="button style3 large">REGISTER</a></li>
-						</ul>
+		</section>
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1" style="background-color: #e97d2f ;">
+			<div class="title" style="background-color: #e97d2f ;">Introduction</div>
+			<div class="container">
+				<p class="style1">So in case you were wondering what this is all about ...</p>
+				<p class="style2">
+					ROBOCON IS THE ONLY ROBOTICS CLUB OF LD COLLEGE OF ENGINEERING</p>
+				<p class="style3">Robocon LDCE is robotics club of LD college of engineering which takes part in
+					international robotics competition <a href="https://en.wikipedia.org/wiki/ABU_Robocon"
+						target="_blank"> ABU Robocon</a>. For more details you can visit our <a
+						href="about.html">ABOUT</a> page. <br><br></p>
+				<br>
+				<p class="style1" style="font-size: 20px;"> <strong>Want to be member of our team ?</strong>
+					<!-- <br>Register yourself  by clicking on Register and we will reach out to you soon. </p> -->
+					<div id="inverthidden" ><p style="color: rgba(116, 10, 10, 0.891);margin-top: 10px;font-weight: bolder;font-size: 18px;">**Registrations are not yet started you can make enquiry for same by contacting us. </p></div>
+					
+				<ul class="actions">
+					
+					<li><button  class="button style3 large" id="registerButton" style="display: none;">Register</button></li>
+					
+					<div id="hidden" style="display:none;margin-top:20px ">
+						<button  class="button style3 large" id="enableButton" onclick="enabling()" >Enable</button></li>
+						
+						<button  class="button style3 large" id="disableButton"  >Disable</button></li>
 					</div>
-				</section>
+				</ul>
+			</div>
+		</section>
 
-				<!-- achievement -->
-			<section id="main" class="wrapper style2" style="background-color:#404654 ;">
-				<div class="title" style="background-color: #404654 ;">Achievements</div>
-				<div class="container" style="background-color: #404654 ;">
+		<!-- achievement -->
+		<section id="main" class="wrapper style2" style="background-color:#404654 ;">
+			<div class="title" style="background-color: #404654 ;">Achievements</div>
+			<div class="container" style="background-color: #404654 ;">
 
-					<!-- Image -->
-						<!-- <a href="#" class="image featured">
+				<!-- Image -->
+				<!-- <a href="#" class="image featured">
 							<img src="/images/robocon2022 team.jpg" alt="" />
 						</a> -->
 
-					<!-- Features -->
-						<section id="features"  ">
+				<!-- Features -->
+				<section id="features" ">
 							
-							<div class="feature-list" ">
-								<div class="row" ">
-									<div class="col-6 col-12-medium">
-										<section>
-											<h3 style="text-align:center ;"class="icon solid fa-check"> Most functional robot award.</h3>
-											<p> We have recieved Most functional robot award as well as we are runner up during year 2004</p>
-										</section>
-									</div>
-									<div class="col-6 col-12-medium">
-										<section>
-											<h3 style="text-align:center ;"class="icon solid fa-check"> Memorable  award.</h3>
-											<p> During theme of 2012, LD College of Engineering has achieved the prestigious award of ‘Best Innovative Design’</p>
-										</section>
-									</div>
-									<div class="col-6 col-12-medium">
-										<section>
-											<h3 style="text-align:center ;"class="icon solid fa-check">Respected Position</h3>
-											<p> In 2015, Robocon LDCE has been able to stand at respectable 3rd position among the top 84 colleges across the country.</p>
-										</section>
-									</div>
-									<div class="col-6 col-12-medium">
-										
-										<section>
-											<h3 style="text-align:center ;"class="icon solid fa-check">Idea award</h3>
-											<p>  Robocon LDCE has framed one more award, 'best idea award' in year 2018.</p>
-										</section>
-										
-									</div>
-									<div class="col-6 col-12-medium">
-										
-										<section>
-											<h3 style="text-align:center ;"class="icon solid fa-check">Winner</h3>
-											<p> During 2019, Robocon LDCE grab chance to play international robotics competition after becomes National level champion and packing Prof. Balakrishnan Memorial Award</p>
-										</section>
-									</div>
-									<div class="col-6 col-12-medium">
-										
-										<section>
-											<h3 style="text-align:center ;"class="icon solid fa-check">League winner</h3>
-											<p> After 2 years of online competition, In 2022 there is offline contest in which we became the league match winner.</p>
-										</section>
-									</div>
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="gallery.html#highlights" class="button style2 large">Visit gallery</a></li>
-								
-							</ul>
-						</section>
+							<div class=" feature-list" ">
+								<div class=" row" ">
+									<div class=" col-6 col-12-medium">
+					<section>
+						<h3 style="text-align:center ;" class="icon solid fa-check"> Most functional robot award.</h3>
+						<p> We have recieved Most functional robot award as well as we are runner up during year 2004
+						</p>
+					</section>
+			</div>
+			<div class="col-6 col-12-medium">
+				<section>
+					<h3 style="text-align:center ;" class="icon solid fa-check"> Memorable award.</h3>
+					<p> During theme of 2012, LD College of Engineering has achieved the prestigious award of ‘Best
+						Innovative Design’</p>
+				</section>
+			</div>
+			<div class="col-6 col-12-medium">
+				<section>
+					<h3 style="text-align:center ;" class="icon solid fa-check">Respected Position</h3>
+					<p> In 2015, Robocon LDCE has been able to stand at respectable 3rd position among the top 84
+						colleges across the country.</p>
+				</section>
+			</div>
+			<div class="col-6 col-12-medium">
 
+				<section>
+					<h3 style="text-align:center ;" class="icon solid fa-check">Idea award</h3>
+					<p> Robocon LDCE has framed one more award, 'best idea award' in year 2018.</p>
+				</section>
+
+			</div>
+			<div class="col-6 col-12-medium">
+
+				<section>
+					<h3 style="text-align:center ;" class="icon solid fa-check">Winner</h3>
+					<p> During 2019, Robocon LDCE grab chance to play international robotics competition after becomes
+						National level champion and packing Prof. Balakrishnan Memorial Award</p>
+				</section>
+			</div>
+			<div class="col-6 col-12-medium">
+
+				<section>
+					<h3 style="text-align:center ;" class="icon solid fa-check">League winner</h3>
+					<p> After 2 years of online competition, In 2022 there is offline contest in which we became the
+						league match winner.</p>
+				</section>
+			</div>
+	</div>
+	</div>
+	<ul class="actions special">
+		<li><a href="gallery.html#highlights" class="button style2 large">Visit gallery</a></li>
+
+	</ul>
+	</section>
+
+	</div>
+	</section>
+
+	<!-- sponsers -->
+	<section id="highlights" class="wrapper style3">
+
+		<div class="title">Sponsers</div>
+<!-- start -->
+
+
+<div class="container mt-2" style="background-color: none!important;">
+	<div class="card">
+		<div class="card-body" id="hidden1" style="display: none;" >
+			<form id="post-form">
+				<center><h3>Add more sponsers</h3></center>
+
+				<div class="col-12"  style="margin: 10px 0px;">
+					
+				<input type="text" id="website" class="form-control" placeholder="website link"></input>
 				</div>
-			</section>
+				<div class="col-12" style="margin: 10px 0px;" >
+				<input type="text" id="post" class="form-control" placeholder="Title here please."></input>
+				</div>
+				<div class="col-12"  style="margin: 10px 0px;">
+					
+					<textarea type="text" id="heading" class="form-control" placeholder="heading"></textarea>
+					</div>
+				<input type="file" class="form-control" id="image" accept="images/sponsers ">
+				<div class="text-center">
+					<button  class="button style1"type="button" class="btn btn-success" onclick="upload1()" >Upload</button>
+				</div>
 
-			<!-- sponsers -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">Sponsers</div>
-					<div class="container">
-						<div class="row aln-center">
+			</form>
+		 </div>
+
+	</div>
+
+
+	<div class="row aln-center" id="scrolling"style="display:flex;flex-direction:row;justify-content:left;overflow-x: auto;">
+		<div class="col-4 col-12-medium" style='display:flex;flex-direction:row,justify-content:left'> 
+			
+			
+			<section class="highlight" id="posts"style='display:flex;flex-direction:row;justify-content:left;' >
+				
+				
+				
+			</section>
+			</div>
+		</div>
+		</div>
+
+		<!-- ended -->
+
+		<!-- <div class="container"> -->
+
+			
+
+			<!--  <div class="row aln-center">
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
@@ -173,96 +523,296 @@
 									</ul>
 								</section>
 							</div>
-						</div>
-					</div>
-					<br><br><p style="text-align: center;">For sponsership and donation please visit our <a href="contact.html" style="color: white!important;">Contact</a> page</p>
-				</section>
+						</div> -->
+		<!-- </div>
+		<br><br>
+		<p style="text-align: center;">For sponsership and donation please visit our <a href="contact.html"
+				style="color: white!important;">Contact</a> page</p> -->
+	</section>
 
-			<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title" style="font-weight: bold;">others</div>
-					<div class="container">
-						
-						<div class="row">
-							<div class="col-6 col-12-medium">
+	<!-- Footer -->
+	<section id="footer" class="wrapper">
+		<div class="title">others</div>
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-6 col-12-medium">
 
-								<!-- Contact Form -->
+					<!-- Contact Form -->
+						<section>
+							<form method="post" action="#">
+								<div class="row gtr-50">
+								
+									<div class="col-12">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.759261174865!2d72.54259821448896!3d23.032609821733764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85277f790a8b%3A0x19d65a6f82b8c100!2sLARCET%20(ROBOCON%20LDCE)!5e0!3m2!1sen!2sin!4v1659098182274!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									
+								</div>
+							</form>
+						</section>
+
+				</div>
+				<div class="col-6 col-12-medium">
+
+					<!-- Contact -->
+						<section class="feature-list small">
+							<div class="row">
+								<div class="col-6 col-12-small">
 									<section>
-										<form method="post" action="#">
-											<div class="row gtr-50">
-											
-												<div class="col-12">
-													<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.759261174865!2d72.54259821448896!3d23.032609821733764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85277f790a8b%3A0x19d65a6f82b8c100!2sLARCET%20(ROBOCON%20LDCE)!5e0!3m2!1sen!2sin!4v1659098182274!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-												</div>
-												
-											</div>
-										</form>
+										<h3 class="icon solid fa-home">Other Useful Link</h3>
+										<a target="_blank" href="http://ldce.ac.in/">LDCE</a><br>
+										<a target="_blank" href="http://www.ddrobocon.in/">DD Robocon</a><br>
+										<a target="_blank" href="https://en.wikipedia.org/wiki/ABU_Robocon">ABU Robocon</a><br>
+										
+								
 									</section>
-
-							</div>
-							<div class="col-6 col-12-medium">
-
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Other Useful Link</h3>
-													<a target="_blank" href="http://ldce.ac.in/">LDCE</a><br>
-													<a target="_blank" href="http://www.ddrobocon.in/">DD Robocon</a><br>
-													<a target="_blank" href="https://en.wikipedia.org/wiki/ABU_Robocon">ABU Robocon</a><br>
-													
-											
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-comment">Social</h3>
-													<p>
-														<a target="_blank" href="https://www.instagram.com/roboconldce/">Instagram</a><br />
-														<a target="_blank" href="https://in.linkedin.com/company/robocon-ldce-team-robocon-india-2019">Linkedin</a><br />
-														<a target="_blank" href="https://www.facebook.com/roboconldce">facebook</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
-													<p>
-														<a itemprop="email" href="mailto:teamroboconldce@gmail.com">Roboconldcollege@gmail.com</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-phone">Phone</h3>
-													<p>
-														<a  href="tel:7043026316">+917043026316</a>
-													</p>
-												</section>
-											</div>
-										</div>
+								</div>
+								<div class="col-6 col-12-small">
+									<section>
+										<h3 class="icon solid fa-comment">Social</h3>
+										<p>
+											<a target="_blank" href="https://www.instagram.com/roboconldce/">Instagram</a><br />
+											<a target="_blank" href="https://in.linkedin.com/company/robocon-ldce-team-robocon-india-2019">Linkedin</a><br />
+											<a target="_blank" href="https://www.facebook.com/roboconldce">facebook</a>
+										</p>
 									</section>
-
+								</div>
+								<div class="col-6 col-12-small">
+									<section>
+										<h3 class="icon solid fa-envelope">Email</h3>
+										<p>
+											<a itemprop="email" href="mailto:teamroboconldce@gmail.com">Roboconldcollege@gmail.com</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-small">
+									<section>
+										<h3 class="icon solid fa-phone">Phone</h3>
+										<p>
+											<a  href="tel:7043026316">+917043026316</a>
+										</p>
+									</section>
+								</div>
 							</div>
-						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; Robocon LDCE</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-		
+						</section>
+
+				</div>
+			</div>
+			<div id="copyright">
+				<ul>
+					<li>&copy; Robocon LDCE</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					
+					<li>
+						
+						<!-- <input  style="background-color: black!important;"type="submit" id='loginForm' name="login" value="Admin Login" style="height: 50px;" /></li> -->
+						<button style="background-color: black!important;" id="adminLogin"  >Admin login</button></li>
+					<div id="login-box" style="width: 100%;display: none;">
+						<div id="LoginForm"class="left" style="height:auto ;width:100%;align-items: center;">
+						  <h1 id='status'>login</h1>
+						  <input type="text" id="email" name="email" placeholder="E-mail" style="width: 100%;" />
+						  <input type="password" id="password" name="password" placeholder="Password"  style="width: 100%;"/>
+						  
+						  <input type="submit" id='login' name="login" value="Login" style="height: 50px;" />
+						  
+						  <input type="submit" id='logout' name="login" value="Logout" style="height: 50px;" />
+					  
+						</div></div>
+				</ul>
+			</div>
+
+
+			
+			
 		</div>
+	</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="defualt.js"></script>	
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="default1.js"></script>
+
+
+				<!-- firebase configure -->
+<script>
+	// Your web app's Firebase configuration
+  
+	var  firebaseConfig = {
+  
+  apiKey: "AIzaSyClMG5syq-JH_kpFwsQdlvfWUaQmCFICBg",
+  authDomain: "roboconldce.firebaseapp.com",
+  databaseURL: "https://roboconldce-default-rtdb.firebaseio.com",
+  projectId: "roboconldce",
+  storageBucket: "roboconldce.appspot.com",
+  messagingSenderId: "807558400123",
+  appId: "1:807558400123:web:23854cf62b3ec368603ade",
+  measurementId: "G-R89DYSR2B1"
+  
+  };
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+  </script>
+
+      <!-- authentication script -->
+	  <script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+		import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+		import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+	   
+	  
+	  const firebaseConfig = {
+	  
+	  apiKey: "AIzaSyClMG5syq-JH_kpFwsQdlvfWUaQmCFICBg",
+	  authDomain: "roboconldce.firebaseapp.com",
+	  databaseURL: "https://roboconldce-default-rtdb.firebaseio.com",
+	  projectId: "roboconldce",
+	  storageBucket: "roboconldce.appspot.com",
+	  messagingSenderId: "807558400123",
+	  appId: "1:807558400123:web:23854cf62b3ec368603ade",
+	  measurementId: "G-R89DYSR2B1"
+	  
+	  };
+	  
+		// Initialize Firebase
+		// const hidden=getElementById("hidden");
+		const app = initializeApp(firebaseConfig);
+		const database = getDatabase(app);
+		const auth = getAuth();
+	  
+	  
+	   login.addEventListener('click',(e)=>{
+		 var email = document.getElementById('email').value;
+		 var password = document.getElementById('password').value;
+	  
+			signInWithEmailAndPassword(auth, email, password)
+			.then((userCredential) => {
+			  // Signed in 
+			  const user = userCredential.user;
+	  
+			  const dt = new Date();
+			   update(ref(database, 'users/' + user.uid),{
+				last_login: dt,
+			  })
+	  
+			   alert('User loged in!');
+			   document.getElementById("hidden").style.display='block';
+			   document.getElementById("hidden1").style.display='block';
+			  // ...
+			})
+			.catch((error) => {
+			  const errorCode = error.code;
+			  const errorMessage = error.message;
+	  
+			  alert(errorMessage);
+		});
+	  
+	   });
+	  
+	  const user = auth.currentUser;
+	  onAuthStateChanged(auth, (user) => {
+		if (user) {
+		  // User is signed in, see docs for a list of available properties
+		  // https://firebase.google.com/docs/reference/js/firebase.User
+		  const uid = user.uid;
+		  //bla bla bla
+		  // ...
+		} else {
+		  // User is signed out
+		  // ...
+		  //bla bla bla
+		}
+	  });
+	  
+	  logout.addEventListener('click',(e)=>{
+	  
+		 signOut(auth).then(() => {
+		   // Sign-out successful.
+		   alert('user loged out'); 
+		   document.getElementById("hidden").style.display = 'none';
+		   
+		   document.getElementById("hidden1").style.display = 'none';
+		   
+		 }).catch((error) => {
+		   // An error happened.
+		   const errorCode = error.code;
+		   const errorMessage = error.message;
+	  
+			  alert(errorMessage);
+		 });
+	  
+	  });
+	  
+	  </script>
+
+  	<!-- toggling admin login page -->
+<script>
+	adminLogin.addEventListener('click',(e)=>{
+	   var element = document.getElementById('login-box');
+if(element.style.display === "none"){
+   element.style.display = "block";
+}else{
+   element.style.display = "none";
+   
+}
+		  
+		  })
+</script>
+
+	<script>
+		registerButton.addEventListener('click',(e)=>{window.open("RegisterationForm.html")});
+
+		enableButton.addEventListener('click',(e)=>{registerButton.style.display="block";inverthidden.style.display="none";});
+
+		disableButton.addEventListener('click',(e)=>{registerButton.style.display="none";inverthidden.style.display="block";});
+	</script>
+
+<!-- scrolling sponsership -->
+<!-- 
+<script>
+
+setInterval(() => {
+	const element = document.getElementById("scrolling");
+	var elementWidth=element.scrollWidth  ;
+	var screenWidth=(element.offsetWidth+10);
+	var remainingWidth=screenWidth-elementWidth;
+	{
+      if (remainingWidth < 0  ){
+		// alert("element  width is "+elementWidth+"screen width is "+screenWidth+"remaining scroll"+remainingWidth);
+		
+	 scrolling.scrollBy(375,0);}
+	
+     }	
+	}
+, 1000);
+setInterval(() => {
+	scrolling.scrollTo(0,0);
+	
+}, 10000);
+
+</script> -->
+
+
+	
+
+
+</body>
+
 </html>

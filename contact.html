@@ -7,7 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+		
+	
 	<style>
+		
+		@media screen and (max-width:736px){#image_coming{width:220px!important ;height:220px!important}}
+
 #validate:hover
 {
 	background-color: rgb(233, 219, 219)!important;
@@ -38,38 +43,37 @@
 							<p>Get in touch with us in various method</p>
 						</div>
 
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
-							
-							<li><a href="about.html">ABOUT</a></li>
-							<li>
-								<a href="gallery.html">Gallery</a>
-								<ul>
-									<li><a href="#team_members">Team members</a></li>
-									<li><a href="#highlights">Achievements</a></li>
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
 								
-									<li>
-										<a href="#">More</a>
-										<ul>
-											<li><a href="#">year 2022 </a></li>
-											<li><a href="#">year 2021</a></li>
-											<li><a href="#">year 2020</a></li>
-											<li><a href="#">year 2019</a></li>
-											<li><a href="#">year 2018</a></li>
-										</ul>
-									</li>
+								<li><a href="about.html">ABOUT</a></li>
+								<li>
+									<a href="gallery.html">Gallery</a>
+									<ul>
+										<li><a href="gallery.html#team_members">Team members</a></li>
+										<li><a href="gallery.html#highlights">Achievements</a></li>
 									
-								</ul>
-							</li>
-                             <!-- <ul> </ul>
-							<li><a href="gallery.html">Gallery</a></li> -->
-							<li><a href="events.html">NEWS</a></li>
-							<li><a href="contact.html">CONTACT</a></li>
-                           
-						</ul>
-					</nav>
+										<li>
+											<a href="#">More</a>
+											<ul>
+												<li><a href="gallery.html#year2022">year 2022 </a></li>
+												<li><a href="gallery.html#year2021">year 2021</a></li>
+												<li><a href="gallery.html#year2020">year 2020</a></li>
+												<li><a href="gallery.html#year2019">year 2019</a></li>
+												<li><a href="gallery.html#year2018">year 2018</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+								</li>
+								 <!-- <ul> </ul>
+								<li><a href="gallery.html">Gallery</a></li> -->
+								<li><a href="events.html">NEWS</a></li>
+								<li><a href="contact.html">CONTACT</a></li>
+							   
+							</ul>
+						</nav>
 
 				</section>
 
@@ -88,9 +92,14 @@
 									
 									<p style="color: white;text-align: center;">There can be a single team as winner but,  in reality there is community as helping hand in behind which gives there support in any possible way for the same.<br>
 										We are glad to see you here, even a little donation amount help us a lot.
-										Thank you for being helping hand for our Team. </p>
+										Thank you for being helping hand for our Team.<br>
+										<br>
+										<br>
+										<br>
+										<img src="images/pexels-photo-4439444.jpeg" width="400px" height="400px" id="image_coming"> </p>
 
-										<form method="post" action="#">
+										
+										<!-- <form method="post" action="#">
 											<div class="row gtr-50">
 												
 												<div class="col-12"><input  style="text-align: center;border-color: #d3d3d3;border-width: 3px;border-style: solid;"type="text" placeholder="Name"  /></div>
@@ -102,7 +111,7 @@
 													</ul>
 												</div>
 											</div>
-										</form>
+										</form> -->
 								</article>
 							</div>
 
@@ -128,21 +137,34 @@
 								</article>
 								<div class="content style4 featured">
 									<div class="container medium">
-										<form  method="post" name="SponsershipData" onsubmit="return validation()" id="FRMSUBMIT" action="#">
+
+										<form action="" id="SponsershipData">
 											<div class="row gtr-50">
-												<div class="col-6 col-12-mobile"><input style="text-align:center;border-color: #c2bbbb;border-width: 3px;border-style: solid;" id="Name" type="text" placeholder="Company name" name="Name" required /></div>
-												<div class="col-6 col-12-mobile"><input value="" style="text-align:center;border-color: #d3d3d3;border-width: 3px;border-style: solid;" id="email"type="email" placeholder="Company email" name="Email"  onkeydown="validation()" required/>
-													<div id='result'></div></div>
 												
-												<div class="col-12"><textarea style="text-align:center;border-color: #d3d3d3;border-width: 3px;border-style: solid;" type="text" id="Message"  placeholder="Any special message" name="Message"></textarea></div>
-												<div class="col-12">
+								
+											<div class="col-12" >
+												<input type="text" id="Name" placeholder="Your name...."/>
+											</div>
+								
+											<div class="col-12"><input value="" style="border-color: #d3d3d3;border-width: 3px;border-style: solid;" id="email"type="email" placeholder="Company email" name="Email"  onkeydown="validation()" required/>
+												<div id='result'></div></div>
+											
+												<div class="col-12"><input  style="border-color: #d3d3d3;border-width: 3px;border-style: solid;"type="text" id="Website" placeholder="Company Website " name="Website" /></div>
+												
+											<div class="col-12">
+												<textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+											</div>
+								<div class="col-12">
 													<ul class="actions special">
 														<li><input style="color: black;background-color: white;"type="submit" name="submit" class="button" value="Send Message" id="validate" /></li>
 														<li><input type="reset" style="color: black;background-color: white;" class="button alt" value="Clear Form" /></li>
 													</ul>
 												</div>
-											</div>
+
+												</div>
 										</form>
+
+										
 									</div>
 								</div>
 							</div>
@@ -238,12 +260,12 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-			jQuery('#FRMSUBMIT').on('submit',function(e){
+
+
+			jQuery('#SponsershipData').on('submit',function(e){
 				e.preventDefault();
 				window.open("thankyou.html");
 				window.close("contact.html");
-				// alert("Thank you for showing your interest. We will get to you in very short time period.We hope all the information provided by you are correct.Thank you.");
-				jQuery.ajax({url:'https://script.google.com/macros/s/AKfycbxt03cYe2Uey8hqI5CB31f9rit8CZv0TpMjG1aMDu22VPQNdSTaFm7kgURkY-apbPnY/exec',type:'post',data:jQuery('#FRMSUBMIT').serialize(),success:function(result){console.log(result);}});
 			});
 
 			
@@ -252,6 +274,10 @@
 <script src="https://code.jquery.com/jquery-3.5.0.min.js">
 </script>
 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./mail.js"></script>
 <script>
 	function validateEmail(email) {
 	  let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -263,8 +289,6 @@
 	  result.text("");
 	  if(validateEmail(email)) {
 		e.preventDefault();
-				alert("Thank you for showing your interest. We will get to you in very short time period.We hope all the information provided by you are correct.Thank you.");
-				jQuery.ajax({url:'https://script.google.com/macros/s/AKfycbxt03cYe2Uey8hqI5CB31f9rit8CZv0TpMjG1aMDu22VPQNdSTaFm7kgURkY-apbPnY/exec',type:'post',data:jQuery('#FRMSUBMIT').serialize(),success:function(result){console.log(result);}});
 		
 	
 	  } else {

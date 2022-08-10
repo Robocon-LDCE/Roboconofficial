@@ -9,6 +9,19 @@
 	</head>
 
 <style>
+#highlights.highlight h3{
+	color:white!important
+}
+.wrapper.style2 img
+	{width: 100%!important;
+				min-block-size:300px;
+		max-block-size: 310px;
+	}
+#highlights	img
+	{width: 100%!important;
+				min-block-size:300px;
+		max-block-size: 310px;
+	}
 	#sidebar h2{
 		color:rgba(0, 0, 0, 0.815);
 	}
@@ -18,10 +31,13 @@
 	.box h3{text-decoration: underline;
 		
 	}
-	a.button.style1
+	@media screen and (max-width: 736px) {
+		a.button.style1
 	{
-		width: 100%;
+		width: 75%;
 	}
+	}
+
 </style>
 
 
@@ -39,6 +55,8 @@
 						</div>
 
 					<!-- Nav -->
+			
+					<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="index.html">Home</a></li>
@@ -47,17 +65,17 @@
 							<li>
 								<a href="gallery.html">Gallery</a>
 								<ul>
-									<li><a href="#team_members">Team members</a></li>
-									<li><a href="#highlights">Achievements</a></li>
+									<li><a href="gallery.html#team_members">Team members</a></li>
+									<li><a href="gallery.html#highlights">Achievements</a></li>
 								
 									<li>
 										<a href="#">More</a>
 										<ul>
-											<li><a href="#">year 2022 </a></li>
-											<li><a href="#">year 2021</a></li>
-											<li><a href="#">year 2020</a></li>
-											<li><a href="#">year 2019</a></li>
-											<li><a href="#">year 2018</a></li>
+											<li><a href="gallery.html#year2022">year 2022 </a></li>
+											<li><a href="gallery.html#year2021">year 2021</a></li>
+											<li><a href="gallery.html#year2020">year 2020</a></li>
+											<li><a href="gallery.html#year2019">year 2019</a></li>
+											<li><a href="gallery.html#year2018">year 2018</a></li>
 										</ul>
 									</li>
 									
@@ -197,13 +215,54 @@
 					</div>
 				</section>
 <!-- Our skills-->
+<section id="highlights" class="wrapper style2">
+					
+	<div class="title">Our skills</div>
+	
+	<div class="container">
+		
 
+		 <div class="row aln-center">
+			<div class="col-4 col-12-medium">
+				<section class="highlight">
+					<a href="#" class="image featured"><img src="images/hardware.jpg" alt="" /></a>
+					<h3><a href="#">Hardware</a></h3>
+					<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+					<ul class="actions">
+						<li><a href="#" class="button style1 large">Learn More</a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="col-4 col-12-medium">
+				<section class="highlight">
+					<a href="#" class="image featured"><img src="images/Software.jpg" alt="" /></a>
+					<h3><a href="#">Software</a></h3>
+					<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+					<ul class="actions">
+						<li><a href="#" class="button style1 large">Learn More</a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="col-4 col-12-medium">
+				<section class="highlight">
+					<a href="#" class="image featured"><img src="images/Mechanical.jpg" alt="" /></a>
+					<h3><a href="#">Mechanical</a></h3>
+					<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+					<ul class="actions">
+						<li><a href="#" class="button style1 large">Learn More</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- <br><br><p style="text-align: center;">For sponsership and donation please visit our <a href="contact.html" style="color: white!important;">Contact</a> page</p> -->
+</section> 
 
 			<!-- Highlights -->
-				<section id="highlights" class="wrapper style2">
+				<section id="highlights" class="wrapper style3" >
 					<div class="title">TEAM MEMBERS</div>
 					<div class="container">
-						<div class="row aln-center">
+						<div class="row aln-center" >
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a  class="image featured"><img style="max-height:200px ;"src="images/robocon2022 team.jpg" alt="robocon2022 team" /></a>
@@ -237,7 +296,7 @@
 							</div>
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-									<a class="image featured" ><img style="max-height: 200px;" src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/22338930_1687147148002944_2843219869604794579_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=-dVwg4xndZMAX-ABTio&_nc_ht=scontent.famd4-1.fna&oh=00_AT-E-2LlNUnUq_-tWTZv_Dz2e_ADcWciv-BF1S0mYuoWkw&oe=63086A90" alt="robocon2017 team" /></a>
+									<a class="image featured" ><img style="height: 200px;"  src="https://scontent.famd4-1.fna.fbcdn.net/v/t31.18172-8/22338930_1687147148002944_2843219869604794579_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=-dVwg4xndZMAX-ABTio&_nc_ht=scontent.famd4-1.fna&oh=00_AT-E-2LlNUnUq_-tWTZv_Dz2e_ADcWciv-BF1S0mYuoWkw&oe=63086A90" alt="robocon2017 team" /></a>
 									<h3>Team Robocon LDCE 2017</a></h3>
 								
 								</section>
@@ -253,12 +312,14 @@
 						</div>
 					</div>
 					<ul class="actions special">
-						<li><a href="gallery.html#team_members" class="button style1 large">Visit gallery</a></li>
+						<li><a href="gallery.html#team_members" class="button style1">Visit gallery</a></li>
 						
 					</ul>
 				</section>
 				
 
+
+				
 			<!-- Footer -->
 			<section id="footer" class="wrapper">
 				<div class="title">others</div>

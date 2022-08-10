@@ -1,0 +1,50 @@
+[debug] [2022-08-06T20:13:58.911Z] ----------------------------------------------------------------------
+[debug] [2022-08-06T20:13:58.913Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-06T20:13:58.913Z] CLI Version:   11.4.2
+[debug] [2022-08-06T20:13:58.914Z] Platform:      win32
+[debug] [2022-08-06T20:13:58.914Z] Node Version:  v16.16.0
+[debug] [2022-08-06T20:13:58.915Z] Time:          Sun Aug 07 2022 01:43:58 GMT+0530 (India Standard Time)
+[debug] [2022-08-06T20:13:58.915Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-06T20:13:58.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-06T20:13:58.996Z] > authorizing via signed-in user (117018virenjain@gmail.com)
+[debug] [2022-08-06T20:13:58.996Z] [iam] checking project roboconldce for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-06T20:13:58.999Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/roboconldce:testIamPermissions [none]
+[debug] [2022-08-06T20:13:58.999Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/roboconldce:testIamPermissions x-goog-quota-user=projects/roboconldce
+[debug] [2022-08-06T20:13:58.999Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/roboconldce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-06T20:14:00.632Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/roboconldce:testIamPermissions 200
+[debug] [2022-08-06T20:14:00.633Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/roboconldce:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-06T20:14:00.636Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/roboconldce [none]
+[debug] [2022-08-06T20:14:01.535Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/roboconldce 200
+[debug] [2022-08-06T20:14:01.536Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/roboconldce {"projectId":"roboconldce","projectNumber":"807558400123","displayName":"RoboconLDCE","name":"projects/roboconldce","resources":{"hostingSite":"roboconldce"},"state":"ACTIVE","etag":"1_59e09de2-39a6-42d0-ba4c-c233033d70c8"}
+[info] 
+[info] === Deploying to 'roboconldce'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-06T20:14:01.543Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/roboconldce [none]
+[debug] [2022-08-06T20:14:02.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/roboconldce 200
+[debug] [2022-08-06T20:14:02.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/roboconldce {"projectId":"roboconldce","projectNumber":"807558400123","displayName":"RoboconLDCE","name":"projects/roboconldce","resources":{"hostingSite":"roboconldce"},"state":"ACTIVE","etag":"1_59e09de2-39a6-42d0-ba4c-c233033d70c8"}
+[debug] [2022-08-06T20:14:02.257Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/807558400123/sites/roboconldce/versions [none]
+[debug] [2022-08-06T20:14:02.258Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/807558400123/sites/roboconldce/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-06T20:14:04.148Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/807558400123/sites/roboconldce/versions 200
+[debug] [2022-08-06T20:14:04.148Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/807558400123/sites/roboconldce/versions {"name":"projects/807558400123/sites/roboconldce/versions/347ad6dc50a380cb","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[roboconldce]: beginning deploy... 
+[debug] [2022-08-06T20:14:04.425Z] Error: EPERM: operation not permitted, scandir 'E:/study/pe/nodemcu_pages/public/firebase-debug.log'
+    at Object.readdirSync (node:fs:1405:3)
+    at GlobSync._readdir (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:49)
+    at deploy (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:83:12)
+    at chain (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:15)
+    at deploy (C:\Users\VIREN\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:69:11)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
