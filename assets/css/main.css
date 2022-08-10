@@ -19,10 +19,21 @@ a.button.style2.large
 	background-color:  #989898;
 }
 
+
+a.button.style1.large:hover
+{
+	color: white!important;
+	background-color:  #989898;
+}
+
 a.button.style1.large
 {
 	color: white!important;
 	background-color:  #989898;
+}
+
+body{
+	overflow-x: hidden;
 }
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -35,6 +46,8 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
+
+
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -148,9 +161,8 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 700;
-		color: #484d55;
 	}
-
+	
 	blockquote {
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
@@ -178,11 +190,11 @@ input, select, textarea {
 		top: -0.5em;
 		font-size: 0.8em;
 	}
-
+	
 	.nobr {
 		white-space: nowrap;
 	}
-
+	
 	br.clear {
 		clear: both;
 	}
@@ -221,6 +233,7 @@ input, select, textarea {
 				width: calc(100% - 100px);
 			}
 
+color: #484d55;
 		}
 
 		@media screen and (max-width: 736px) {
